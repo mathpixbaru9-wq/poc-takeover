@@ -1,1 +1,129 @@
-This is POC Takeover 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚠️ SECURITY ALERT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff41;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            text-align: center;
+            border: 3px solid #ff0000;
+            padding: 50px 40px;
+            border-radius: 15px;
+            background: #0a0a0a;
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 50px rgba(255, 0, 0, 0.3); }
+            50% { box-shadow: 0 0 80px rgba(255, 0, 0, 0.6); }
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff0000;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .status {
+            font-size: 1.8em;
+            color: #ff4444;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px dashed #ff4444;
+            background: rgba(255, 0, 0, 0.1);
+        }
+        .info {
+            font-size: 1.2em;
+            color: #ffaa00;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .alert {
+            font-size: 1.1em;
+            color: #ff6666;
+            padding: 15px;
+            background: rgba(255, 0, 0, 0.15);
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ff0000;
+        }
+        .domain {
+            color: #00ff41;
+            font-weight: bold;
+            font-size: 1.3em;
+            background: rgba(0, 255, 65, 0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .emergency {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.4em;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 SECURITY ALERT</h1>
+        
+        <div class="status">
+            ⚠️ ALREADY TAKEOVER! ⚠️
+        </div>
+        
+        <div class="domain">
+            📍 kaewjangwat.com
+        </div>
+        
+        <div class="info">
+            🔴 This domain has been compromised via <strong>Subdomain Takeover</strong>
+        </div>
+        
+        <div class="alert">
+            <strong>⚠️ PLEASE CALL EMERGENCY!</strong><br>
+            This is a security vulnerability demonstration.
+        </div>
+        
+        <div class="emergency">
+            📞 EMERGENCY CONTACT REQUIRED
+        </div>
+        
+        <div class="footer">
+            🔐 This is a Proof of Concept (PoC) for educational purposes.<br>
+            Please secure your DNS records immediately.
+        </div>
+    </div>
+</body>
+</html>
